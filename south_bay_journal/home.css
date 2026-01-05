@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    text-decoration: dashed;
+    color: #9A6600;
+    font-style: bold;
+}
+
+h5 {
+    text-align: center;
+}
+
+h6 {
+    font-size: small;
+}
+
+td {
+    text-align: center;
+    width: 10%;
+}
+
+.title_div {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.categories {
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.embedded_map{
+    padding-left: 5%;
+    padding-right: auto;
+    padding-bottom: 4%;
+}
+
+.about_div {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.post {
+    border: 4px solid;
+    border-radius: 25px;
+    border-color: #9A6600;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 25%;
+}
+
+.post_img {
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+button {
+    background: none; 
+    color: inherit; 
+    border: none;
+    padding: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+a {
+    color: #9A6600;
+}
+
+a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.contact_me {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}

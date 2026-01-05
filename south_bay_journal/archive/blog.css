@@ -1,0 +1,30 @@
+.blog_post{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+title {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.image-caption {
+    font-size: smaller;
+    font-style: italic;
+}
+
+h1, h3, a {
+    text-align: center;
+    color: #9A6600;
+}
+
+h5 {
+    text-align: center;
+    color: blueviolet;
+}
+
+body {
+    background-color: antiquewhite;
+}
