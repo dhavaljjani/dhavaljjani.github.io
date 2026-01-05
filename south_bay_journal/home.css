@@ -20,7 +20,7 @@ td {
 
 .title_div {
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 .categories {
@@ -48,6 +48,7 @@ td {
     margin-left: 10%;
     margin-right: 10%;
     height: 25%;
+    background-color: blanchedalmond;
 }
 
 .post_img {
