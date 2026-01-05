@@ -1,6 +1,6 @@
 # South Bay Journal blog
 
-This is my newsletter blog which is written in just simple HTML, CSS, and some JS.
+This is for this newsletter blog which is written in just simple HTML, CSS, and some JS. A way to not have to rely on substack.
 
 ## Layout for new blog post html pages:
 
@@ -9,8 +9,9 @@ This is my newsletter blog which is written in just simple HTML, CSS, and some J
 <html lang="en">
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/south_bay_journal/blog.css">
-        <title>*DATE*</title> 
+        <link rel="stylesheet" href="blog.css">
+        <title>*DATE*</title>
+        <meta name="" content="">
     </head>
     <body>
         <h1> *TITLE OF POST* <h1>

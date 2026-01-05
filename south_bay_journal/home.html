@@ -2,36 +2,330 @@
 
 <html lang="en">
   <head>
+    <script src="home.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/south_bay_journal/blog.css">
+    <link rel="stylesheet" href="home.css">
     <title>South Bay Journal</title> 
   </head>
+  <link rel="icon" href=""/>
   <body>
-    <div name="title_div">
+    <div class="title_div"> <!--TITLE DIV-->
         <h1>South Bay Journal</h1>
     </div>
-    <div name="categories_div">
+    <div class="categories_div"> <!--CATEGORIES DIV-->
         <table class="categories">
             <tr>
-                <td><button><a href="">Bars</a></button></td>
-                <td><a href="">Sports</a></td>
-                <td><a href="">Transit & Development</a></td>
-                <td><a href="">Random </a></td>
-                <td><a href="">About</a></td>
+                <td style="color: #9A6600;"><button onclick="filterPosts('bars')">Bars</button></td>
+                <td style="color: #9A6600;"><button onclick="filterPosts('sports')">Sports</button></td>
+                <td style="color: #9A6600;"><button onclick="filterPosts('transit')">Transit & Development</button></td>
+                <td style="color: #9A6600;"><button onclick="filterPosts('random')">Random</button></td>
+                <td style="color: #9A6600;"><button onclick="filterPosts('all')">All</button></td>
+                <td><a href="#map">Map</a></td>
+                <td><a href="https://www.instagram.com/southbayjournal/" style="color: blueviolet; font-weight: bold;">Instagram</a></td>
             </tr>
         </table>
     </div>
-    <div name="body_div">
-        <div class="featured_post">
-            
-        </div>
-        <div class="archive_posts">
+    <div> <!--POSTS DIV-->
+          <!--TEMPLATE BELOW, ADD FOR EVERY NEW POST MANUALLY-->
+          <!-- <a href="/south_bay_journal/archive/TITLE/TITLE.html">
+            <div class="post FILTER">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/TITLE/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">TITLE</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>DESCRIPTION</h6></td>
+                  <td>Posted DATE</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a> -->
 
-        </div>    
+          <a href="/south_bay_journal/archive/A Night at NASA's SpaceBar in Moffett Field/A Night at NASA's SpaceBar in Moffett Field.html">
+            <div class="post bars">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/A Night at NASA's SpaceBar in Moffett Field/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">A Night at NASA's SpaceBar in Moffett Field</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>One of the most unique bars in the area, easily</h6></td>
+                  <td>Posted December 26, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Bruce Arena and the Mercurial Quakes/Bruce Arena and the Mercurial Quakes.html">
+            <div class="post sports">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/Bruce Arena and the Mercurial Quakes/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">Bruce Arena and the Mercurial Quakes</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>Assessing the Earthquakes' playoff chances with two games to go</h6></td>
+                  <td>Posted October 4, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Why I Love Castle Rock State Park/Why I Love Castle Rock State Park.html">
+            <div class="post random">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/Why I Love Castle Rock State Park/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">Why I Love Castle Rock State Park</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>Blue ridge mountains, San Lorenzo River</h6></td>
+                  <td>Posted July 15, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Thinking of San Diego/Thinking of San Diego.html">
+            <div class="post random">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/Thinking of San Diego/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">Thinking of San Diego</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>When I moved into my first apartment outside a college campus - I needed a couch.</h6></td>
+                  <td>Posted July 6, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/What is the _California Forever_ project_/What is the _California Forever_ project_.html">
+            <div class="post transit">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/What is the _California Forever_ project_/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">What is the "California Forever" project?</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>Thinking about housing, billionaires, and Jesse Eisenberg</h6></td>
+                  <td>Posted June 20, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Some MV history and a local mystery/Some MV history and a local mystery.html">
+            <div class="post random">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/Some MV history and a local mystery/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">Some MV history and a local mystery</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>It's not exactly Hounds of the Baskervilles - but we can have some fun!</h6></td>
+                  <td>Posted April 26, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/A Night at Apple Jack's in La Honda/A Night at Apple Jack's in La Honda.html">
+            <div class="post bars">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/A Night at Apple Jack's in La Honda/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">A Night at Apple Jack's in La Honda</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>Parts are reality, parts are just musings of my mind</h6></td>
+                  <td>Posted April 21, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/A Local Favorite_ the De Anza Flea Market/A Local Favorite_ the De Anza Flea Market.html">
+            <div class="post random">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/A Local Favorite_ the De Anza Flea Market/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">A Local Favorite: the De Anza Flea Market</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>Eye catching antiques and decrepit gardening tools galore!</h6></td>
+                  <td>Posted March 31, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/The First Fruits of California High Speed Rail/The First Fruits of California High Speed Rail.html">
+            <div class="post transit">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/The First Fruits of California High Speed Rail/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">The First Fruits of California High Speed Rail</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>Experienced through a lovely day in San Mateo</h6></td>
+                  <td>Posted March 7, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Pre Season Tremors_ A preview of the 2025 SJ Earthquakes season/Pre Season Tremors_ A preview of the 2025 SJ Earthquakes season.html">
+            <div class="post sports">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/Pre Season Tremors_ A preview of the 2025 SJ Earthquakes season/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">Pre Season Tremors: A preview of the 2025 SJ Earthquakes season</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>Being foolishly optimistic like every year</h6></td>
+                  <td>Posted February 20, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/A Night at Mac's Club on Post St/A Night at Mac's Club on Post St.html">
+            <div class="post bars">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/A Night at Mac's Club on Post St/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">A Night at Mac's Club on Post St</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>How have I never been to this charmingly divey gay bar?</h6></td>
+                  <td>Posted February 9, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/The Curious Case of the Abandoned Vallco Lot/The Curious Case of the Abandoned Vallco Lot.html">
+            <div class="post transit">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/The Curious Case of the Abandoned Vallco Lot/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">The Curious Case of the Abandoned Vallco Lot</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>A Cupertino development case study</h6></td>
+                  <td>Posted January 31, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Haunted By Visions/Haunted By Visions.html">
+            <div class="post random">
+              <table>
+                <tr>
+                  <td><h3 class="">Haunted By Visions</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>A short writing unrelated to the south bay</h6></td>
+                  <td>Posted January 28, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Shaking It Up_ The Now of Ex-Quakes/Shaking It Up_ The Now of Ex-Quakes.html">
+            <div class="post sports">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/Shaking It Up_ The Now of Ex-Quakes/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">Shaking It Up: The Now of Ex-Quakes</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>This one's a soccer post</h6></td>
+                  <td>Posted January 24, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Finding the Lost Coast/Finding the Lost Coast.html">
+            <div class="post random">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/Finding the Lost Coast/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">Finding the Lost Coast</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>and a speeding ticket...</h6></td>
+                  <td>Posted January 14, 2025</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/A Night at Molly Magee's on Castro St/A Night at Molly Magee's on Castro St.html">
+            <div class="post bars">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/A Night at Molly Magee's on Castro St/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">A Night at Molly Magee's on Castro St</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>In the midst of endless office parks and tech buildings: a wonderful Irish dive bar!</h6></td>
+                  <td>Posted December 31, 2024</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/Learning about the VTA light rail sytem together.../Learning about the VTA light rail sytem together....html">
+            <div class="post transit">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/Learning about the VTA light rail sytem together.../cover_img.png" class="post_img"></td>
+                  <td><h3 class="">Learning about the VTA light rail sytem together...</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>How do you get from any given point A to any point B in the south bay? You drive of course.</h6></td>
+                  <td>Posted December 23, 2024</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+          <a href="/south_bay_journal/archive/What is this substack__/What is this substack__.html">
+            <div class="post random">
+              <table>
+                <tr>
+                  <td><img src="/south_bay_journal/archive/What is this substack__/cover_img.png" class="post_img"></td>
+                  <td><h3 class="">What is this substack??</h3></td>
+                </tr>
+                <tr>
+                  <td><h6>Good question.</h6></td>
+                  <td>Posted December 4, 2024</h6></td>
+                </tr>
+              </table>
+            </div>
+          </a>
+
+    </div> <br>
+    <div class="about_div">
+        Okay so I want to rely on Google and ESRI and all those monopolies as little as possible...but embedding their data and maps is relatively easy so that's what we have here below. I thought of using an image map but that would be less interactive for people. Of course, lots of these posts go over and involve multiple places, so there's more covered than this map shows, but it's still neat I think. I'm excited to keep filling the map! Take a look:
+    </div> <br>
+    <div class="embedded_map" id="map">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1qzySeCEiIbmyQKwUmEc_QjVINf-JzpY&ehbc=2E312F&noprof=1" width="90%" height="480px"></iframe>
     </div>
-    <div name="about_div">
-        
-    </div>
+    <!-- <div class="contact_me">
+      <table>
+        <tr><td><h5>Contact me if you want to drop a comment, ask a question, or if you just want to work on something together in the area! </h5></td></tr>
+        <tr><td>Your email: <input type="email" id="email"></td></tr>
+        <tr><td><textarea placeholder="Your message here" rows="4" cols="100" id="message"></textarea></tr>
+        <tr><td><button type="button" class="btn btn-primary" onclick="handleContact()">Submit</button></td></tr>
+      </table>
+    </div> -->
   </body>
 </html>
