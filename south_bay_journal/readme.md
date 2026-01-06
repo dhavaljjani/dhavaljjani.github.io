@@ -11,6 +11,7 @@ This is for this newsletter blog which is written in just simple HTML, CSS, and 
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="../blog.css">
             <title>TITLE</title>
+            <meta charset="UTF-8">
             <meta name="TITLE" content="DESCRIPTION">
         </head>
         <body>
@@ -20,6 +21,9 @@ This is for this newsletter blog which is written in just simple HTML, CSS, and 
             <div class="blog_post">
                 BLOG_BODY
                 <a href="/south_bay_journal/home.html"> HOME </a>
+            </div>
+            <div style="align-items:center;">
+                [optional embedded spotify iframe]
             </div>
         </body>
     </html>

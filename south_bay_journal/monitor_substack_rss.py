@@ -11,7 +11,7 @@ south_bay_journal
         ->[...other blog folders]
     ->[home page, css, python, readme]
 """
-import os, feedparser, requests, re
+import os, feedparser, requests, re, html
 from bs4 import BeautifulSoup
 from PIL import Image
 
@@ -108,6 +108,7 @@ def create_html_from_blog(title, desc, date, body):
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="../blog.css">
             <title>TITLE</title>
+            <meta charset="UTF-8">
             <meta name="TITLE" content="DESCRIPTION">
         </head>
         <body>
@@ -135,8 +136,8 @@ def create_html_from_blog(title, desc, date, body):
         a.decompose()
     for p in soup.find_all("p", class_="button-wrapper"):
         p.decompose()
-
-    html_file = html_file.replace("BLOG_BODY", soup.prettify())
+    #soup.prettify().replace('’', "'")
+    html_file = html_file.replace("BLOG_BODY", soup.prettify(formatter="html"))
     #html_file = html_file.replace("LINK", link)
     html_file = html_file.replace("DATE", create_date_string(date))
 
@@ -151,6 +152,7 @@ def create_html_from_blog(title, desc, date, body):
 
 substack_rss_url = "https://southbayjournal.substack.com/feed"
 feed = feedparser.parse(substack_rss_url) #need to sanitize
+#print(feed.encoding)
 
 count = 0
 for i in feed.entries:
@@ -172,7 +174,6 @@ for i in feed.entries:
            if key == "value":
                #print(f"{value}\n")
                html_body = value
-    
     if (blog_title not in os.listdir("archive/")):
         create_html_from_blog(blog_title, blog_description, blog_publish_date, html_body)
         extract_cover_image(blog_link, blog_title)
