@@ -1,0 +1,265 @@
+
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="../blog.css">
+            <title>Learning about the VTA light rail sytem together...</title>
+            <meta charset="UTF-8">
+            <meta name="Learning about the VTA light rail sytem together..." content="How do you get from any given point A to any point B in the south bay?">
+        </head>
+        <body>
+            <h1> Learning about the VTA light rail sytem together... </h1>
+            <h3> How do you get from any given point A to any point B in the south bay? </h3>
+            <h5> Originally posted on substack on December 23, 2024 </h5>
+            <div class="blog_post">
+                <p>
+ How do you get from any given point A to any point B in the south bay? You drive of course. Taking the bus or the light rail is something you do if you&rsquo;re not in a rush and okay with walking to stations and walking to your destination from stations as well. You do it either because the car insurance is too expensive, or you&rsquo;re a masochist. For what it&rsquo;s worth, I don&rsquo;t think the BART presence here or the VTA light rail system is as bad as it&rsquo;s purported. But it&rsquo;s also just&hellip;not very great.
+</p>
+<p>
+ It&rsquo;s not the fault of solely the VTA or the BART or Caltrain or anything though. Part of it lies with the prominent NIMBY mindset that many homeowners in the area have. Part of it lies in the lack of density around rail and bus corridors (you can blame both city councils and NIMBY folk for this). Part of it lies in the massive freeways we have throughout San Jose and the whole area that encourage us to drive everywhere.
+</p>
+<p>
+ Don&rsquo;t get me wrong, the freeways are necessary, of course. I use them almost every day. But traffic is absolutely terrible and soul sucking, especially during rush hour. I think it gets as bad here as it does in SoCal, we just don&rsquo;t have that traffic reputation (yet).
+</p>
+<p>
+ So, I figure we can go over our current system, and potential changes that should be made, and reasons why some things are the way they are right now. For what it&rsquo;s worth, there are some really exciting transit developments in the bay right now too. We should talk about those too.
+</p>
+<p>
+ I&rsquo;ll be focusing on the light rail here. It&rsquo;s the system I use most, and I feel that&rsquo;s why I can speak on it and I have certain thoughts. The BART is not something I ever use, and the Caltrain is a rarity. And I&rsquo;ve never even been on the Ace Train. Not considering Amtrak or inter-city commuter rail either, I&rsquo;ve only used the San Joaquins Rail in that system. Here&rsquo;s a general light rail transit map though, overlayed on the bay:
+</p>
+<p>
+ I whipped this up on ArcGIS Pro with some data provided by the VTA itself. The lines were drawn in by myself so they may be off by meters at most, but they are largely accurate.
+</p>
+<div class="captioned-image-container">
+ <figure>
+  <a class="image-link image2 is-viewable-img" href="https://substackcdn.com/image/fetch/$s_!HG0r!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcfb399d5-c415-4695-8e99-8fc5b3d4b225_771x596.png" target="_blank">
+   <div class="image2-inset">
+    <source type="image/webp"/>
+    <img alt="" class="sizing-normal" height="596" src="https://substackcdn.com/image/fetch/$s_!HG0r!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcfb399d5-c415-4695-8e99-8fc5b3d4b225_771x596.png" width="771"/>
+   </div>
+  </a>
+ </figure>
+</div>
+<p>
+ So, from this alone, we can see something glaring. Yes, there are no bus lines on this map (which is an extensive system by itself), but there are many places that are completely missing light rail! Namely, it would be Cupertino, Saratoga, and Los Gatos. Other neighborhoods like the Almaden Valley, Alviso, and Cambrian Park are also largely ignored. Sunnyvale and Santa Clara have stops, although located mostly in the northern parts of the cities. I guess they can get away with it since the centers of Sunnyvale and Santa Clara are covered by the Caltrain. San Jose is covered extensively here. We&rsquo;ll get into the specifics of all that later, but let&rsquo;s add bus stops and light rail stops to the map:
+</p>
+<div class="captioned-image-container">
+ <figure>
+  <a class="image-link image2 is-viewable-img" href="https://substackcdn.com/image/fetch/$s_!AaiB!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5657f5e0-bb4b-415c-bf7d-b480d60687d6_771x596.png" target="_blank">
+   <div class="image2-inset">
+    <source type="image/webp"/>
+    <img alt="" class="sizing-normal" height="596" src="https://substackcdn.com/image/fetch/$s_!AaiB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5657f5e0-bb4b-415c-bf7d-b480d60687d6_771x596.png" width="771"/>
+   </div>
+  </a>
+ </figure>
+</div>
+<p>
+ Okay, okay! So the bus stops seem to cover the entire south bay pretty well! Now here&rsquo;s one with the scale of the stops normalized to the amount of boardings (data from October 2022) as reported by the VTA:
+</p>
+<div class="captioned-image-container">
+ <figure>
+  <a class="image-link image2 is-viewable-img" href="https://substackcdn.com/image/fetch/$s_!mUzL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa169731e-fe9b-48e0-b734-fe10d2823fd5_771x596.png" target="_blank">
+   <div class="image2-inset">
+    <source type="image/webp"/>
+    <img alt="" class="sizing-normal" height="596" src="https://substackcdn.com/image/fetch/$s_!mUzL!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa169731e-fe9b-48e0-b734-fe10d2823fd5_771x596.png" width="771"/>
+   </div>
+  </a>
+ </figure>
+</div>
+<p>
+ Huh? Okay so I guess&hellip;the biggest three stops in the area are bus stops. Namely, its Santa Clara &amp; 6th, Santa Clara &amp; 5th, and the Palo Alto Transit Center. The two Santa Clara bus stops serve 8, and 10 bus routes respectively. It kind of makes sense that they are both right by the blue and green line in downtown San Jose, but the fact that light rail stops have comparatively such low ridership and boardings is alarming. Some, such as the Bayshore NASA station have numbers in the single digits. I looked into 2023 data (and while it&rsquo;s not unfortunately available to download for me), confirmed that in October 2023, the Bayshore NASA station averaged 4 weekday boardings with 21 weekday alightings. That&rsquo;s a pretty low ridership.
+</p>
+<p>
+ Even when I&rsquo;ve been on the orange line, so many stops seem to barely have people getting off or on, and I&rsquo;ve heard this to be true of the blue and green line as well. It&rsquo;s great that there are so many stations, but when there&rsquo;s nothing but office parks and bedroom communities around half of them, it&rsquo;s not surprising the ridership is so low. Looking through more data, here were some more of my general takeaways.
+</p>
+<h2>
+ <strong>
+  The &ldquo;Good&rdquo;:
+ </strong>
+</h2>
+<ul>
+ <li>
+  <p>
+   The BART connection at Milpitas (and Berryessa station) is really great for people to be able to connect to the BART system easily, something that was lacking in the south bay forever. It connects the bay to the east bay and SF going even further north. Also, there&rsquo;s a Great Mall station right by the Milpitas station. Double win.
+  </p>
+ </li>
+ <li>
+  <p>
+   The
+   <a href="https://www.vta.org/projects/eastridge-bart-regional-connector">
+    extension of the orange line
+   </a>
+   to Eastridge Mall is a great project and I&rsquo;m so glad it&rsquo;s happening. It&rsquo;s the part of the map that&rsquo;s indicated with the black line, and will include two new stops, in Story Road and Eastridge Mall. A couple big positives with it are that it will allow people deeper into San Jose and close to Evergreen connect to the BART station at Milpitas. Also, the vast majority of the two mile run will be a fully inclined set of tracks in the median of Capitol Expressway. To me, the grade-separated tracks are the best part of the orange line as of now anyways. No waiting for cars and good views. Personally, as someone who lives off Story Road, this is just that bit more exciting. It&rsquo;s super neat seeing the construction happening with noticeable changes every week.
+  </p>
+ </li>
+ <li>
+  <p>
+   The Campbell green line station is one of the best stations in the whole system. Located downtown, it&rsquo;s in a very walkable area with tons of bars, restaurants, and shops located near it. Campbell has some good housing density around the area too. Anecdotally, I was there a couple weeks ago and downtown was popping at night! Along with it, the station seemed to have tons of people boarding at night, and it was really well lit up!
+  </p>
+ </li>
+ <li>
+  <p>
+   The fully raised rail section largely in Milpitas is the best part of the orange line. I love sitting on it looking out the window with the sight of Mission Peak in the distance.
+  </p>
+ </li>
+ <li>
+  <p>
+   There&rsquo;s a station right by Levi&rsquo;s Stadium and Great America! I&rsquo;ve heard from others who have used it on game day that it&rsquo;s always packed and a way better experience than driving (not hard to do).
+  </p>
+ </li>
+</ul>
+<h2>
+ <strong>
+  The &ldquo;Not So Good&rdquo;:
+ </strong>
+</h2>
+<ul>
+ <li>
+  <p>
+   Okay, so I mentioned the extension of the orange line being great. And it is! But with one caveat. It is a 2.4 mile extension, costing about $650 million. That comes to about $270 million per mile. It&rsquo;s not crazy since it is fully elevated and dual tracks, but that&rsquo;s definitely a lot of money and expensive. But hey, money spent on public transit is ultimately a good thing to me.
+  </p>
+ </li>
+ <li>
+  <p>
+   In downtown SJ, the light rail goes really slow. Like you might beat it with a light jog in many portions. And while, it&rsquo;s true that downtown does see a good bit of pedestrian foot traffic in some parts, and the light rail should be accordingly slow for safety, this makes it so much less alluring to use. When I&rsquo;ve been out in downtown wanting to get to another part of downtown, I have found Lime scooters to be a better, quicker, and dare I say, more convenient way to get around.
+  </p>
+ </li>
+ <li>
+  <p>
+   So the low ridership in general can probably be largely put on one big problem for the area in general. The lack of density in San Jose and Santa Clara. Our land usage is not very well thought out. It&rsquo;s not entirely surprising considering that early urban planners in SJ actively aimed to sprawl the city. Different parts of the city are separated into almost what appears in distinct parts now. I was in North SJ recently after going to a test center, and I tried to see if there was anything to do in the area. Oh my mistake, I had forgotten that the entire N First/Tasman/Zanker street is solely for office parks and businesses. Basically no where to eat, absolutely no foot traffic, and an odd unsettling feeling that you shouldn&rsquo;t hang out around the area if you don&rsquo;t have work there in general. And god forbid you go there for work either, Tasman and Zanker have the worst traffic in the mornings. This is despite them being serviced by the green and blue line. People who work in these areas also barely use these stations to commute, as evidenced by the data. This is not a problem specific to that area though. Land usage everywhere in the south bay seems to only encourage office buildings and commuter malls. Walkable areas with people living and working close by are a rarity not a rule. Our cars are our pride, not the trains. And they will always remain so if we ignore them.
+  </p>
+  <div class="captioned-image-container">
+   <figure>
+    <a class="image-link image2 is-viewable-img" href="https://substackcdn.com/image/fetch/$s_!MiNj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba325bf5-582e-41b0-8005-3401f3554820_1016x599.png" target="_blank">
+     <div class="image2-inset">
+      <source type="image/webp"/>
+      <img alt="" class="sizing-normal" height="280.0442913385827" src="https://substackcdn.com/image/fetch/$s_!MiNj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba325bf5-582e-41b0-8005-3401f3554820_1016x599.png" width="475"/>
+     </div>
+    </a>
+    <figcaption class="image-caption">
+     My quick and extremely accurate estimation of the south bay&rsquo;s land usage
+    </figcaption>
+   </figure>
+  </div>
+ </li>
+ <li>
+  <p>
+   There are way too many at-grade crossings. As in, too many intersections between the roads and the light rail tracks. The idea that, while being on the train, you may have to wait for straggling cars and backed up roads is&hellip;terrible.
+  </p>
+  <p>
+   The other day, I decided to do a small experiment. Going from one terminus of the orange line to another (Alum Rock to Mountain View), I did some counting. Due to at grade crossings, I counted five separate stops where we didn&rsquo;t stop due to a station, but just cause of a busy intersection with traffic. Sad to see public transit sidelined for a row of Teslas.
+  </p>
+ </li>
+ <li>
+  <p>
+   The blue and green lines have a &ldquo;Airport&rdquo; station but&hellip;it&rsquo;s a few blocks away from the actual airport. About a 25 minute walk away. Why is there not simply a SJC station? Well
+   <a href="https://www.reddit.com/r/bayarea/comments/1bbn9hd/comment/kualpo0/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button">
+    a Reddit comment
+   </a>
+   I found said they had intel about it being due to the airport not wanting to miss out on parking revenue. Go figure.
+  </p>
+ </li>
+</ul>
+<h2>
+ <strong>
+  The &ldquo;Set it on Fire&rdquo;:
+ </strong>
+</h2>
+<ul>
+ <li>
+  <p>
+   The gaping holes are hard to ignore. As I mentioned before, the spots of Cupertino, Saratoga, and Los Gatos are the biggest culprits here. And they are largely that way out of choice, these cities are notoriously anti-development even in terms of housing. I mean, for how long has Cupertino deliberated what to do with the Vallco lot and subsequently shot down every proposal? These cities are so anti-development, forget just transit;
+   <a href="https://www.eastbaytimes.com/2015/05/20/los-gatos-to-join-cupertino-and-saratoga-in-highway-85-suit/amp/">
+    all three of them sued CalTrans and VTA over the expansion of Highway 85 back in 2016-2018
+   </a>
+   . Can&rsquo;t even change up the freeways. What were the primary concerns? Traffic and noise pollution for the people living in the area. Saratoga were so against even the idea of an exit from state highway 85&hellip;it&rsquo;s not surprising they would stop any kind of transit development in the area too. Until these anti-development viewpoints change, it&rsquo;s hard to see the VTA being able to expand the light rail substantially.
+  </p>
+ </li>
+</ul>
+<p>
+ <strong>
+  Actually being on the light rail:
+ </strong>
+</p>
+<p>
+ The light rail experience itself can be pleasant. The trains are kept pretty clean, people are largely cordial, and stops are quick but long enough to allow people on and off. I&rsquo;ve never felt exceptionally unsafe, although there are occasions where there will be a city tweaker yelling at people or what not. I&rsquo;m not vilifying these people, and I understand this is part of a much larger societal issue we have with both homelessness and the drug epidemic. However, I have noticed other people looking very uncomfortable and unsafe as well, and it&rsquo;s hard not to feel that way if someone is yelling obscenities and vulgarities and picking out people sitting on the train. I had seen a man doing something very similar to this once, and a woman in front of me got off on the following stop. I don&rsquo;t know if she meant to, but I don&rsquo;t blame her since this guy kept trying to talk to her and was repeatedly yelling profanities. Right before I left, I caught his eye and he talked to me. It seemed like he just wanted someone to talk to about something he bought, and he seemed kind enough to me, if only slightly out of it. But these situations are intense and can easily go bad. I don&rsquo;t blame people for avoiding these types of situations, specifically in downtown SJ. But again, this is a larger societal issue, and I think it&rsquo;s not so bad here compared to other parts of the country.
+</p>
+<div>
+ <hr/>
+</div>
+<h2>
+ <strong>
+  What Could Be:
+ </strong>
+</h2>
+<div class="captioned-image-container">
+ <figure>
+  <a class="image-link image2 is-viewable-img" href="https://substackcdn.com/image/fetch/$s_!NfX2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F84e1f5b5-a6a7-42ec-9717-a9f9ba4a2043_790x611.png" target="_blank">
+   <div class="image2-inset">
+    <source type="image/webp"/>
+    <img alt="" class="sizing-normal" height="611" src="https://substackcdn.com/image/fetch/$s_!NfX2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F84e1f5b5-a6a7-42ec-9717-a9f9ba4a2043_790x611.png" width="790"/>
+   </div>
+  </a>
+ </figure>
+</div>
+<p>
+ I don&rsquo;t claim to know how to fix this system. I think it&rsquo;s a big undertaking and I can imagine it&rsquo;s not easy to handle for the VTA. But in an ideal world, I think a couple things could happen (spearheaded by people smarter and better connected than me). First, we would paint every light rail car the color of the line it corresponds to. Okay that&rsquo;s (mostly) a joke. But for real, there is
+ <a href="https://www.sfgate.com/travel/article/bay-area-train-tracks-new-purpose-vta-18457522.php">
+  the possibility of the VTA using the Permanente Branch
+ </a>
+ . Paraphrasing the linked SFGate article, tracks from the postwar era now owned by the Union Pacific are being looked into by the VTA as a potential new light rail expansion. Rod Diridon Sr is a supporter of this idea, although the further track would have to be constructed to loop back to Mountain View ideally. This will of course require Union Pacific to sell or rent the tracks, but it&rsquo;s good that such a prominent figure in Diridon supports the idea. On the map above, the Permanent branch is the purple one that goes through Saratoga and up to Cupertino before trailing off a little bit west.
+</p>
+<p>
+ Another great and potentially even better addition could be the presence of a Stevens Creek Like. The road is large enough to support a dual track line on the median, connecting Cupertino to San Clara and San Jose. It would go through Valley Fair, Santana Row, and dozens of other commercial spaces. It is shown on the map above as the horizontal purple line, and could connect to the green line.
+</p>
+<p>
+ I took this following photo from the summit of Black Mountain some months back, look at that massive road going down the center. That&rsquo;s Stevens Creek Boulevard, and boy does it look like it could use rail.
+</p>
+<div class="captioned-image-container">
+ <figure>
+  <a class="image-link image2 is-viewable-img" href="https://substackcdn.com/image/fetch/$s_!fAFJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c536d1e-fb23-43e1-b1bb-bc3d441293a1_3024x4032.jpeg" target="_blank">
+   <div class="image2-inset">
+    <source type="image/webp"/>
+    <img alt="" class="sizing-normal" height="1941" src="https://substackcdn.com/image/fetch/$s_!fAFJ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c536d1e-fb23-43e1-b1bb-bc3d441293a1_3024x4032.jpeg" width="1456"/>
+   </div>
+  </a>
+ </figure>
+</div>
+<p>
+ Thankfully, this is a real project which is happening right now! If you go to
+</p>
+<p>
+ <a href="https://www.stevenscreekvision.com/">
+  www.stevenscreekvision.com
+ </a>
+ , you can read about a vision study project spearheaded by multiple cities and the County of Santa Clara. They aim to gather community-based information about the entire corridor, and the sites it would go through, as well as looking into biking transit options too. The sites passed would include Valley Fair/Santana Row, Main Street in Cupertino, the (currently empty) Vallco lot, Apple HQ, and tons of other smaller commercial areas. I snooped around a bit on the City of Santa Clara website, and found resolutions about the vision project from the City of San Jose, City of Cupertino, City of Santa Clara, and County of Santa Clara. Not a single &ldquo;NO&rdquo; vote to this vision study! Now of course, it&rsquo;s just to allow funding for the informational stage, and it indicates nothing about what these cities will actually do something when the time comes, but positive signs I think?
+</p>
+<p>
+ I encourage you to get involved if you live in the area and could join focus groups, pop ups, or council/committee meetings. The website claims to post events when they come, so that&rsquo;s probably the best source for that kind of stuff. Let&rsquo;s hope we can get a Stevens Creek Line in the future. And who knows, maybe I called it and it&rsquo;ll be the Purple Line!
+</p>
+<p>
+ Hope you enjoyed this read, and maybe learned a little. I know I did while writing this. I have a couple more posts that are almost completed which I&rsquo;ll be posting this week too. Exciting times!
+</p>
+<p>
+ Edit: I&rsquo;m writing this about a couple weeks after, I have another idea for a line. I was driving through Capitol Expressway home, and I guess I had never really noticed how wide the median is for it until then. There is more than enough space to fit light-rail track there, and that would clear up so much congestion. It could start by looping in from the Mountain View station onto Capitol Expressway, and then follow it&rsquo;s median until around Trimble Road, which has a smaller median but still one big enough where changes could be made if we pushed for them. From there it could just connect to the green and blue line going down North 1st Street. Like so:
+</p>
+<div class="captioned-image-container">
+ <figure>
+  <a class="image-link image2 is-viewable-img" href="https://substackcdn.com/image/fetch/$s_!33l-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e049cf9-a037-4e3b-bec3-272fd08a7759_810x626.png" target="_blank">
+   <div class="image2-inset">
+    <source type="image/webp"/>
+    <img alt="" class="sizing-normal" height="626" src="https://substackcdn.com/image/fetch/$s_!33l-!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e049cf9-a037-4e3b-bec3-272fd08a7759_810x626.png" width="810"/>
+   </div>
+  </a>
+ </figure>
+</div>
+<p>
+ The point being, there are so many possibilites to connect the south bay using light-rail, and the space exists. The medians are large enough, and the traffic is headache enducing enough to warrant changes. It&rsquo;s just up to us making those choices in the next few decades.
+</p>
+
+                <a href="/south_bay_journal/home.html"> HOME </a>
+            </div>
+        </body>
+    </html>
+    
