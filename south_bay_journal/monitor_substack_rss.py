@@ -111,6 +111,7 @@ def create_html_from_blog(title, desc, date, body):
             <meta charset="UTF-8">
             <meta name="TITLE" content="DESCRIPTION">
         </head>
+        <link rel="icon" href="../../favicon.ico"/>
         <body>
             <h1> TITLE </h1>
             <h3> DESCRIPTION </h3>
