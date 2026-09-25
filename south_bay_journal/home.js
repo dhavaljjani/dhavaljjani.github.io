@@ -19,11 +19,11 @@ function filterPosts(filter_name){
 }
 
 function handleContact(){
-    const email = document.getElementById('email').value;
+    const email = (document.getElementById('email').value).trim();
     const message = document.getElementById('message').value;
     const body = `From: ${email} \n Message: ${message}`;
     const subject = "South Bay Journal message";
-    const myEmail = 'dhavaljjani01@gmail.com'
+    const myEmail = 'southbayjournal@gmail.com'
     const mailto = `mailto:${myEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(mailto);
 }
